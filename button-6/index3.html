@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>button3</title>
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+</head>
+
+<body>
+
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" focusable="false">
+		<symbol id="ripply-scott" viewBox="0 0 100 100">
+			<g>
+				<polygon points="5.6,77.4 0,29 39.1,0 83.8,19.3 89.4,67.7 50.3,96.7" />
+				<polygon fill="rgba(255,255,255,0.35)" transform="scale(0.5), translate(50, 50)" points="5.6,77.4 0,29 39.1,0 83.8,19.3 89.4,67.7 50.3,96.7"
+				/>
+				<polygon fill="rgba(255,255,255,0.25)" transform="scale(0.25), translate(145, 145)" points="5.6,77.4 0,29 39.1,0 83.8,19.3 89.4,67.7 50.3,96.7"
+				/>
+			</g>
+		</symbol>
+	</svg>
+
+	<button id="js-ripple-btn" class="button styl-material">
+		Click
+		<svg class="ripple-obj" id="js-ripple">
+			<use width="4" height="4" xlink:href="#ripply-scott" class="js-ripple"></use>
+		</svg>
+	</button>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/ripple-config.js"></script>
+</body>
+
+</html>
